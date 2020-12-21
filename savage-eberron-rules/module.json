@@ -3,12 +3,15 @@
    "title": "Rule Set: Savage Eberron",
    "description": "This is the additional ruleset for the Eberron Campaign Setting conversted to Savage Worlds Adventure Edition. All needed additional Edges, Powers, Hindrances, Races, Equipment and MAgical Items for the Eberron Campaign Setting have been added.",
    "author": "Freewolf2000",
-   "version": "0.1.6",
+   "version": "0.2.0",
    "minimumCoreVersion": "0.7.5",
    "compatibleCoreVersion":"0.7.9",
    "url": "https://github.com/Freewolf2000/savage-eberron-rules",
    "manifest": "https://raw.githubusercontent.com/Freewolf2000/savage-eberron-rules/main/savage-eberron-rules/module.json",
    "download": "https://github.com/Freewolf2000/savage-eberron-rules/raw/main/savage-eberron-rules.zip",
+   "esmodules": [
+       "./scripts/swade-core-rules.js"
+   ],
    "packs": [
      {
        "label": "Savage Eberron Edges",
@@ -20,14 +23,15 @@
      }
    ],
    "systems": ["swade"],
-   "dependencies": [{
-            "type": "module",
-            "name": "compendium-folders",
-            "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
-        },
-        {
-            "name": "swade",
-            "type": "system"
-        }
+   "dependencies": [
+     {
+        "type": "module",
+        "name": "compendium-folders",
+        "manifest": "https://raw.githubusercontent.com/earlSt1/vtt-compendium-folders/master/module.json"
+      },
+      {
+        "name": "swade",
+        "type": "system"
+      }
     ]
 }
