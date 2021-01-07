@@ -3,7 +3,7 @@
    "title": "Rule Set: Savage Eberron",
    "description": "This is the additional ruleset for the Eberron Campaign Setting converted to Savage Worlds Adventure Edition. All needed additional Edges, Powers, Hindrances, Races, Equipment and Magical Items for the Eberron Campaign Setting have been added.",
    "author": "Freewolf2000",
-   "version": "0.5.6",
+   "version": "0.6.0",
    "minimumCoreVersion": "0.7.5",
    "compatibleCoreVersion":"0.7.9",
    "url": "https://github.com/Freewolf2000/savage-eberron-rules",
@@ -58,14 +58,6 @@
        "name": "savage-eberron-powers",
        "entity": "Item",
        "path": "packs/savage-eberron-powers.db",
-       "system": "swade",
-       "module": "savage-eberron-rules"
-     },
-     {
-       "label": "Savage Eberron Races",
-       "name": "savage-eberron-races",
-       "entity": "JournalEntry",
-       "path": "packs/savage-eberron-races.db",
        "system": "swade",
        "module": "savage-eberron-rules"
      },
