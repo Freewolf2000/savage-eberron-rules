@@ -60,4 +60,8 @@ Hooks.on("ready", async () => {
     let sheet = window.document.styleSheets[0]
     sheet.insertRule(rule, sheet.cssRules.length);
   }
-})
+});
+
+Hooks.on("renderSwadeNPCSheet", (sheet, html, opts) => {
+  html.find(".currency class").innerHTML = "GP"
+});
