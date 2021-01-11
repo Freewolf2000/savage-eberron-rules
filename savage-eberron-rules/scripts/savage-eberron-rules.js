@@ -63,5 +63,5 @@ Hooks.on("ready", async () => {
 });
 
 Hooks.on("renderSwadeNPCSheet", (sheet, html, opts) => {
-  html.find(".currency class").innerHTML = "GP"
+  html.find(".currency").innerHTML = "galifars"
 });
