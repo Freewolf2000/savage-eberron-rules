@@ -62,6 +62,15 @@ Hooks.on("ready", async () => {
   }
 });
 
-Hooks.on("renderSwadeNPCSheet", (sheet, html, opts) => {
-  html.find(".currency").innerHTML = "galifars"
+function _replaceCurrency(sheet, html, entity) {
+  // Bennies
+  //html.find(".currency").remove();
+
+  let currencyFields = `<div class="form-group currency"><label>Galifars</label><span class="form-fields"><input name="data.details.galifars" type="text" value="" placeholder="Galifars"></span></div>`;
+  html.find(".curreny").append(currencyFields);
+};
+
+Hooks.on("renderSwadeCharacterSheet", (sheet, html, entity) => {
+    _replaceCurrency(sheet, html, entity);
+  }
 });
