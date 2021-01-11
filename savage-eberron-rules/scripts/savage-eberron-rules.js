@@ -67,7 +67,7 @@ function _replaceCurrency(sheet, html, entity) {
   //html.find(".currency").remove();
 
   let currencyFields = `<div class="form-group currency"><label>Galifars</label><span class="form-fields"><input name="data.details.galifars" type="text" value="" placeholder="Galifars"></span></div>`;
-  html.find(".curreny").append(currencyFields);
+  html.find(".currency").append(currencyFields);
 };
 
 Hooks.on("renderSwadeCharacterSheet", (sheet, html, entity) => {
