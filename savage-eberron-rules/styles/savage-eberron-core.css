@@ -14,13 +14,13 @@
 }
 
 /* Dragonmarked Header Image */
-.swade-core .header {
+.savage-eberron-core .dragonmarked-header {
   background: none;
   height: 325px;
   position: relative;
 }
 
-.savage-eberron-core .header .title {
+.savage-eberron-core .dragonmarked-header .title {
   position: absolute;
   width: 75%;
   left: 12%;
