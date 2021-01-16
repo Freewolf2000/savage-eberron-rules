@@ -1,19 +1,28 @@
+/* center image or something in page, can be used in multiple images */
 .savage-eberron-core .center {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
+/* Top Padding for images in lower part of screen */
 .savage-eberron-core .vert-spacer {
   margin-top: 20px;
 }
 
+/* float image to the right side */
 .savage-eberron-core img.right {
   float: right;
   margin: 5px 0 5px 5px;
 }
 
-/* Dragonmarked Header Image */
+/* float image to the left side */
+.savage-eberron-core img.left {
+  float: left;
+  margin: 5px 5px 5px 0;
+}
+
+/* Dragonmarked Header */
 .savage-eberron-core .dragonmarked-header {
   background: none;
   height: 325px;
@@ -28,4 +37,10 @@
   text-align: center;
   text-transform: uppercase;
   transform: translate(0, -50%);
+}
+
+.swade-core .dragonmarked-header .title p {
+  font-size: 48px;
+  font-family: 'Anton';
+  text-transform: uppercase;
 }
