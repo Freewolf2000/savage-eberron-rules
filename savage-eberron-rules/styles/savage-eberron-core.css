@@ -14,7 +14,8 @@
 }
 
 /* Dragonmarked Header Image */
-.savage-eberron-core .header {
+.swade-core .header {
+  background: none;
   height: 325px;
   position: relative;
 }
