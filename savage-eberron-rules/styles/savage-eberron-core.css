@@ -1,0 +1,17 @@
+.savage-eberron-core img.center {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.savage-eberron-core img.right {
+  float: right;
+  margin: 5px 0 5px 5px;
+}
+
+.savage-eberron-core .img-figure {
+  padding: 1em;
+  background-image: url('../assets/layout/table-parchment.webp');
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: 5px 5px 10px rgba(0,0,0, .5);
+}
