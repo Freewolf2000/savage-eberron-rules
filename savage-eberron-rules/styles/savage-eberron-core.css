@@ -10,6 +10,21 @@
   margin-top: 20px;
 }
 
+/* text block for a quote from some character */
+.savage-eberron-core .quote {
+  text-align: right;
+  font-size: 1.2 rem;
+  width: 75%;
+  font-family: 'Rock Salt', cursive;
+}
+
+/* The author of a quote */
+.savage-eberron-core .quote .author {
+  font-size: 1 rem;
+  font-weight: 400;
+  font-family: 'Rock Salt', cursive;
+}
+
 /* float image to the right side */
 .savage-eberron-core img.right {
   float: right;
