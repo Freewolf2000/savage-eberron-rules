@@ -13,16 +13,26 @@
 /* text block for a quote from some character */
 .savage-eberron-core .quote {
   text-align: right;
-  font-size: 1.2 rem;
+  float: right;
+  font-size: 18px;
   width: 75%;
   font-family: 'Rock Salt', cursive;
 }
 
 /* The author of a quote */
 .savage-eberron-core .quote .author {
-  font-size: 1 rem;
+  font-size: 12px;
   font-weight: 400;
   font-family: 'Rock Salt', cursive;
+}
+
+/* clear the float afterwards */
+.clearfix:after {
+   content: ".";
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
 }
 
 /* float image to the right side */
