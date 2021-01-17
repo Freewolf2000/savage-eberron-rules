@@ -12,18 +12,24 @@
 
 /* text block for a quote from some character */
 .savage-eberron-core .quote {
-  text-align: right;
-  float: right;
-  font-size: 18px;
-  width: 75%;
+  font-size: 14px;
   font-family: 'Rock Salt', cursive;
+  line-height: 1.7;
+}
+
+/* make it so the quote only takes up 75% of the width */
+.savage-eberron-core .quote p {
+  width: 75%;
 }
 
 /* The author of a quote */
 .savage-eberron-core .quote .author {
+  text-align: right;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: bold;
   font-family: 'Rock Salt', cursive;
+  margin-top: 10px;
+  display: block;
 }
 
 /* clear the float afterwards */
