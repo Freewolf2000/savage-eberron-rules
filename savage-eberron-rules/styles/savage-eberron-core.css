@@ -27,7 +27,7 @@
   text-align: right;
   font-size: 12px;
   font-weight: bold;
-  font-family: 'Rock Salt', cursive;
+  font-family: var(--quote-font-family);
   margin-top: 10px;
   display: block;
 }
@@ -70,8 +70,25 @@
   transform: translate(0, -50%);
 }
 
-.swade-core .dragonmarked-header .title p {
+.savage-eberron-core .dragonmarked-header .title p {
   font-size: 48px;
   font-family: 'Anton';
   text-transform: uppercase;
+}
+
+.savage-eberron-core aside.floated-aside {
+  background-color: var(--custom-journal-translucent-accent-color);
+  border: 5px ridge var(--custom-journal-base-accent-color);
+  padding: 4px;
+  margin-right: 2%;
+  margin-left: 2%;
+  width: 35%;
+  float: right;
+}
+.swade-core .half-strip-paper {
+  background-image: url("../assets/layout/creating_other_skills_aside.webp");
+  background-size: 100% 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
 }
