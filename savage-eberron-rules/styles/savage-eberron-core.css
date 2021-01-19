@@ -74,23 +74,33 @@
   text-transform: uppercase;
 }
 
+/* Float an aside to the right for content */
 .savage-eberron-core aside.floated-aside {
-  padding: 4px;
   margin-right: 2%;
   margin-left: 2%;
   width: 35%;
   float: right;
   text-align: justify;
 }
-.savage-eberron-core aside.floated-aside h2, h3 {
+/* Center headers for the aside */
+.savage-eberron-core aside.floated-aside h2,
+.savage-eberron-core aside.floated-aside h3 {
   text-align: center;
 }
+/* Parchment background for this kind of aside */
 .savage-eberron-core .half-torn-parchment {
   background-image: url("../assets/layout/creating_other_skills_aside.webp");
   background-size: 100% 100%;
-  padding: 3%;
+  padding: 3% 4% 10% 4%;
 }
-.savage-eberron-core .red-circle-list li:before {
+
+/*change some default SWADE styling for personal flavor */
+/* Change the margins around the figure tag */
+.savage-eberron-core .figure {
+  margin: 2% auto;
+}
+/* Change the positioning of the bullets for the list to be more visible */
+.savage-eberron-core .red-bullet-list li:before {
   font-size:1.3em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
   margin-left: -.6em;
 }
