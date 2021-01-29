@@ -107,8 +107,8 @@
 
 /* columns for available powers in Arcane Background description */
 .savage-eberron-core .available-powers {
-  columns: 5;
-  margin-left: 1em;
+  columns: 3;
+  margin-left: .7em;
 }
 
 .savage-eberron-core .available-powers p {
@@ -118,4 +118,10 @@
   margin: .1em 0;
   font-style: italic;
   text-transform: lowercase;
+}
+
+/* When listing powers cap first letter, and lower case everything else. Italize the powers */
+.savage-eberron-core .list-powers {
+  font-style: italic;
+  text-transform: capitalize;
 }
