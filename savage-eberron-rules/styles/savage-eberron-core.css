@@ -41,6 +41,21 @@
    clear: both;
 }
 
+/* align text to the right side */
+.savage-eberron-core .right {
+  text-align: right;
+}
+
+/* align text to the center */
+.savage-eberron-core .center {
+  text-align: center;
+}
+
+/* align text to the left side */
+.savage-eberron-core .left {
+  text-align: left;
+}
+
 /* float image to the right side */
 .savage-eberron-core img.right {
   float: right;
