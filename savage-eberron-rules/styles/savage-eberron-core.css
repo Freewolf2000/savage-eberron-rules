@@ -5,9 +5,14 @@
   align-items: center;
 }
 
-/* Top Padding for images in lower part of screen */
+/* Top Padding for images and tables in lower part of screen */
 .savage-eberron-core .vert-spacer {
-  margin-top: 20px;
+  margin-top: 20px !important;
+}
+
+/* Top Padding for images and tables in lower part of screen */
+.savage-eberron-core .bottom-spacer {
+  margin-bottom: 20px !important;
 }
 
 /* text block for a quote from some character */
@@ -87,6 +92,13 @@
   font-size: 48px;
   font-family: 'Anton';
   text-transform: uppercase;
+}
+
+/* style h4's like the rest of the headers */
+.savage-eberron-core h3 {
+    font-family: 'Anton';
+    font-weight: normal;
+    text-transform: uppercase;
 }
 
 /* Float an aside to the right for content */
