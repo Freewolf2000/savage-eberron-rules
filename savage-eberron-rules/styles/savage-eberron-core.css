@@ -46,6 +46,11 @@
    clear: both;
 }
 
+/* Add some padding above and below tables */
+.savage-eberron-core .table {
+  margin: 10px auto !important;
+}
+
 /* align text to the right side */
 .savage-eberron-core .right {
   text-align: right;
