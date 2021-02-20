@@ -142,7 +142,6 @@
   columns: 3;
   margin-left: .7em;
 }
-
 .savage-eberron-core .available-powers p {
   padding-left: 5px;
   padding-right: 5px;
@@ -155,5 +154,9 @@
 /* When listing powers cap first letter, and lower case everything else. Italize the powers */
 .savage-eberron-core .list-powers {
   font-style: italic;
-  text-transform: capitalize;
+  text-transform: lowercase;
+  display: block;
+}
+.savage-eberron-core .list-powers::first-letter {
+  text-transform: uppercase;
 }
