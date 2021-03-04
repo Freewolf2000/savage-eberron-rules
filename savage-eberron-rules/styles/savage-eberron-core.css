@@ -15,6 +15,11 @@
   margin-bottom: 20px !important;
 }
 
+/* highlight any links that are broken so they can be found */
+.savage-eberron-core a.entity-link.broken .fas {
+  display: inline;
+}
+
 /* text block for a quote from some character */
 .savage-eberron-core .quote {
   font-size: 14px;
