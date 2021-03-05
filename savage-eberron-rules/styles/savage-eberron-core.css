@@ -19,6 +19,9 @@
 .savage-eberron-core a.entity-link.broken .fas {
   display: inline;
 }
+.savage-eberron-core a.entity-link.broken {
+  text-decoration: line-through;
+}
 
 /* text block for a quote from some character */
 .savage-eberron-core .quote {
