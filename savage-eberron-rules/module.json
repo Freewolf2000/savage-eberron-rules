@@ -3,7 +3,7 @@
    "title": "Rule Set: Savage Eberron",
    "description": "This is the additional ruleset for the Eberron Campaign Setting converted to Savage Worlds Adventure Edition. All needed additional Edges, Powers, Hindrances, Races, Equipment and Magical Items for the Eberron Campaign Setting have been added.",
    "author": "Freewolf2000",
-   "version": "0.12.15",
+   "version": "0.13.2",
    "minimumCoreVersion": "0.7.5",
    "compatibleCoreVersion":"0.7.9",
    "url": "https://github.com/Freewolf2000/savage-eberron-rules",
@@ -65,6 +65,14 @@
        "module": "savage-eberron-rules"
      },
      {
+       "label": "Savage Eberron Lore Tables",
+       "name": "savage-eberron-lore-tables",
+       "entity": "RollTable",
+       "path": "packs/savage-eberron-lore-tables.db",
+       "system": "swade",
+       "module": "savage-eberron-rules"
+     },
+     {
        "label": "Savage Eberron Powers",
        "name": "savage-eberron-powers",
        "entity": "Item",
@@ -89,18 +97,18 @@
        "module": "savage-eberron-rules"
      },
      {
-       "label": "Savage Eberron Skills",
-       "name": "savage-eberron-skills",
-       "entity": "Item",
-       "path": "packs/savage-eberron-skills.db",
+       "label": "Savage Eberron Rules Tables",
+       "name": "savage-eberron-rules-tables",
+       "entity": "RollTable",
+       "path": "packs/savage-eberron-rules-tables.db",
        "system": "swade",
        "module": "savage-eberron-rules"
      },
      {
-       "label": "Savage Eberron Tables",
-       "name": "savage-eberron-tables",
-       "entity": "RollTable",
-       "path": "packs/savage-eberron-tables.db",
+       "label": "Savage Eberron Skills",
+       "name": "savage-eberron-skills",
+       "entity": "Item",
+       "path": "packs/savage-eberron-skills.db",
        "system": "swade",
        "module": "savage-eberron-rules"
      },

@@ -16,9 +16,6 @@
 }
 
 /* highlight any links that are broken so they can be found */
-.savage-eberron-core a.entity-link.broken .fas {
-  display: inline;
-}
 .savage-eberron-core a.entity-link.broken {
   text-decoration: line-through;
 }
