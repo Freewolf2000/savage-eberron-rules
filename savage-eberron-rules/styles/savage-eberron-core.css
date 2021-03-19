@@ -57,18 +57,33 @@
 }
 
 /* align text to the right side */
-.savage-eberron-core .right {
+.savage-eberron-core .right,
+.savage-eberron-core .table td .right {
   text-align: right;
 }
 
 /* align text to the center */
-.savage-eberron-core .center {
+.savage-eberron-core .center,
+.savage-eberron-core .table td .center {
   text-align: center;
 }
 
 /* align text to the left side */
-.savage-eberron-core .left {
+.savage-eberron-core .left,
+.savage-eberron-core .table td .left {
   text-align: left;
+}
+
+.savage-eberron-core #detailDemoDiv #detailDemoTbl {
+    column-count:4;
+}
+
+.savage-eberron-core .demoTblDiv {
+    width: 60%;
+    display: inline-block;
+    text-align: right;
+    padding-right: 20px;
+    min-width: 95px;
 }
 
 /* float image to the right side */
