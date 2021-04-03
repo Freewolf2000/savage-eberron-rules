@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Bangers';
+  src: local('Bangers Regular'), local('Bangers-Regular'),
+      url('fonts/Bangers/Bangers-Regular.ttf') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: local('Dancing Script Regular'), local('DancingScript-Regular'),
+    url('fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('tff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dancing Script';
+  src: local('Dancing Script Bold'), local('DancingScript-Bold'),
+    url('fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('tff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'New Tegomin';
+  src: local('New Tegomin'), local('NewTegomin-Regular'),
+      url('fonts/New_Tegomin/NewTegomin-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Satisfy';
+  src: local('Satisfy'), local('Satisfy-Regular'),
+      url('fonts/Satisfy/Satisfy-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Train One';
+  src: local('Train One'), local('TrainOne-Regular'),
+      url('fonts/Train_One/TrainOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Yatra One';
+  src: local('Yatra One'), local('YatraOne-Regular'),
+      url('fonts/Ytara_One/YatraOne-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

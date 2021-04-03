@@ -1,0 +1,32 @@
+/* Parchment background for this kind of aside */
+.savage-eberron-core .half-torn-parchment {
+  background-image: url("../assets/layout/creating_other_skills_aside.webp");
+  background-size: 100% 100%;
+  padding: 3% 4% 10% 4%;
+}
+
+/* Parchment background for this kind of aside */
+.savage-eberron-core .periodical-stack {
+  background-image: url("../assets/layout/parchment-stack.webp");
+  background-size: 100% 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+
+/* Parchment background for this kind of aside */
+.swade-core .periodical-stack {
+  background-image: url("../assets/layout/parchment-stack.webp");
+  background-size: 100% 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}
+/* Parchment background for this kind of aside */
+.savage-eberron-core .periodical-article {
+  background-image: url("../assets/layout/creating_other_skills_aside.webp");
+  background-size: 100% 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 10%;
+}

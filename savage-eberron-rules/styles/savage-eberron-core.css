@@ -16,6 +16,11 @@
   --table-headers-font-family: 'EB Garamond', serif; /* Roboto, sans-serif */
   --table-summary-font-family: var(--table-headers-font-family);
   --quote-font-family: 'Rock Salt', cursive;
+  --script-01-font-family: 'Dancing Script', cursive;
+  --script-02-font-family: 'Satisfy', cursive;
+  --periodical-title-font-family: 'Train One', cursive;
+  --periodical-heading-font-family: 'Yantra One', cursive;
+  --periodical-font-family: 'New Tegomin', cursive;
 }
 
 /* center image or something in page, can be used in multiple images */
@@ -170,12 +175,6 @@
 .savage-eberron-core aside.floated-aside h2,
 .savage-eberron-core aside.floated-aside h3 {
   text-align: center;
-}
-/* Parchment background for this kind of aside */
-.savage-eberron-core .half-torn-parchment {
-  background-image: url("../assets/layout/creating_other_skills_aside.webp");
-  background-size: 100% 100%;
-  padding: 3% 4% 10% 4%;
 }
 
 /*change some default SWADE styling for personal flavor */
