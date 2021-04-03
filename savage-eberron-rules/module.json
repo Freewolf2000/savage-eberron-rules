@@ -13,8 +13,8 @@
        "./scripts/savage-eberron-rules.js"
    ],
    "styles": [
-       "./styles/savage-eberron-core.css"
-       "./styles/savage-eberron-core-fonts.css"
+       "./styles/savage-eberron-core.css",
+       "./styles/savage-eberron-core-fonts.css",
        "./styles/savage-eberron-backgrounds.css"
    ],
    "packs": [
