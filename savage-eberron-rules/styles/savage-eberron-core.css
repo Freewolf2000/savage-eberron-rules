@@ -23,6 +23,11 @@
   --periodical-font-family: 'New Tegomin', cursive;
 }
 
+/* Fix for different background images */
+.savage-eberron-core {
+  height: 100%;
+}
+
 /* center image or something in page, can be used in multiple images */
 .savage-eberron-core .center {
   display: flex;
@@ -186,6 +191,11 @@
 .savage-eberron-core .red-bullet-list li:before {
   font-size:1.3em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
   margin-left: -.6em;
+}
+
+/* have a bullet be a star for mystic powers */
+.savage-eberron-core .red-bullet-list li.star:before {
+  content:"\066D"; /* /06DD is the numerical unicode for a star; */
 }
 
 /* columns for available powers in Arcane Background description */

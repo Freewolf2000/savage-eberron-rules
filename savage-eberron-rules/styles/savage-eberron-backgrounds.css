@@ -6,27 +6,32 @@
 }
 
 /* Parchment background for this kind of aside */
-.savage-eberron-core .periodical-stack {
-  background-image: url("../assets/layout/parchment-stack.webp");
+.savage-eberron-core .periodical-front-page {
+  background-image: url("../assets/layout/vehicle_notes_aside.webp");
   background-size: 100% 100%;
   padding-left: 10%;
   padding-right: 10%;
   padding-bottom: 10%;
+  height: 100%;
 }
 
 /* Parchment background for this kind of aside */
-.swade-core .periodical-stack {
+.savage-eberron-core .periodical-stack {
   background-image: url("../assets/layout/parchment-stack.webp");
   background-size: 100% 100%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
+  padding: 10% 20%;
+  height: 100%;
 }
+
 /* Parchment background for this kind of aside */
 .savage-eberron-core .periodical-article {
-  background-image: url("../assets/layout/creating_other_skills_aside.webp");
+  background-image: url("../assets/layout/periodical-background-02.webp");
   background-size: 100% 100%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-bottom: 10%;
+  padding: 5% 5% 5% 10%;
+  height: 100%;
+}
+
+/* Parchment background for this kind of aside */
+.savage-eberron-core .periodical-stack div.article {
+  transform: rotate(2deg);
 }
