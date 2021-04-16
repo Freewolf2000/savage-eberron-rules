@@ -195,7 +195,8 @@
 
 /* have a bullet be a star for mystic powers */
 .savage-eberron-core .red-bullet-list li.star:before {
-  content:"\066D"; /* /06DD is the numerical unicode for a star; */
+  content:"\22C6"; /* /06DD is the numerical unicode for a star; */
+  padding-right: .05em;
 }
 
 /* columns for available powers in Arcane Background description */
