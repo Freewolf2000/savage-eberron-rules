@@ -128,6 +128,22 @@
     min-width: 95px;
 }
 
+.savage-eberron-core .toc-links-title {
+  border-top:2px solid #8c160f;
+  border-bottom: 2px solid #8c160f;
+  color: #8c160f;
+  background-color: #c58a87;
+  text-align: center;
+}
+
+/* Create columns for listing of article links */
+.savage-eberron-core .toc-columns {
+  columns: 2;
+  padding-bottom: .75em;
+  border-bottom: 2px solid #8c160f;
+  margin-bottom: 1em;
+}
+
 /* float image to the right side */
 .savage-eberron-core img.right {
   float: right;
