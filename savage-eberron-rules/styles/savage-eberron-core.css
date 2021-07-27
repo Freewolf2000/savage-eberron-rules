@@ -23,47 +23,58 @@
   --periodical-font-family: 'New Tegomin', cursive;
 }
 
+/* some styles to give more space for the the editor */
+.tox .tox-toolbar, .tox .tox-toolbar__overflow, .tox .tox-toolbar__primary {
+  background-image: none;
+}
+.tox .tox-btn {
+  height: 20px;
+}
+
+
+
 /* Fix for different background images */
-.savage-eberron-core {
+div.savage-eberron-core {
   height: 100%;
 }
 
 /* center image or something in page, can be used in multiple images */
-.savage-eberron-core .center {
+div.savage-eberron-core .center {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
 /* Top Padding for images and tables in lower part of screen */
-.savage-eberron-core .vert-spacer {
+div.savage-eberron-core .vert-spacer {
   margin-top: 20px !important;
 }
 
 /* Top Padding for images and tables in lower part of screen */
-.savage-eberron-core .bottom-spacer {
+div.savage-eberron-core .bottom-spacer {
   margin-bottom: 20px !important;
 }
 
 /* highlight any links that are broken so they can be found */
-.savage-eberron-core a.entity-link.broken {
+div.savage-eberron-core a.entity-link.broken {
   text-decoration: line-through;
+  color: #8e4d16;
 }
 
 /* text block for a quote from some character */
-.savage-eberron-core .quote {
+div.savage-eberron-core .quote {
   font-size: 14px;
   font-family: var(--quote-font-family);
   line-height: 1.7;
 }
 
 /* make it so the quote only takes up 75% of the width */
-.savage-eberron-core .quote p {
+div.savage-eberron-core .quote p {
   width: 75%;
 }
 
 /* The author of a quote */
-.savage-eberron-core .quote .author {
+div.savage-eberron-core .quote .author {
   text-align: right;
   font-size: 12px;
   font-weight: bold;
@@ -82,29 +93,29 @@
 }
 
 /* Add some padding above and below tables */
-.savage-eberron-core .table {
+div.savage-eberron-core .table {
   margin: 10px auto !important;
 }
 
 /* align text to the right side */
-.savage-eberron-core .right,
-.savage-eberron-core .table td .right {
+div.savage-eberron-core .right,
+div.savage-eberron-core .table td .right {
   text-align: right;
 }
 
 /* align text to the center */
-.savage-eberron-core .center,
-.savage-eberron-core .table td .center {
+div.savage-eberron-core .center,
+div.savage-eberron-core .table td .center {
   text-align: center;
 }
 
 /* align text to the left side */
-.savage-eberron-core .left,
-.savage-eberron-core .table td .left {
+div.savage-eberron-core .left,
+div.savage-eberron-core .table td .left {
   text-align: left;
 }
 
-.savage-eberron-core #detailDemoDiv h2 {
+div.savage-eberron-core #detailDemoDiv h2 {
   display: block;
   margin: 0;
   padding-top: .7em;
@@ -116,11 +127,11 @@
   color: var(--white);
 }
 
-.savage-eberron-core #detailDemoDiv #detailDemoTbl {
+div.savage-eberron-core #detailDemoDiv #detailDemoTbl {
     column-count:4;
 }
 
-.savage-eberron-core .demoTblDiv {
+div.savage-eberron-core .demoTblDiv {
     width: 60%;
     display: inline-block;
     text-align: right;
@@ -128,7 +139,7 @@
     min-width: 95px;
 }
 
-.savage-eberron-core .toc-links-title {
+div.savage-eberron-core .toc-links-title {
   border-top:2px solid #8c160f;
   border-bottom: 2px solid #8c160f;
   color: #8c160f;
@@ -137,7 +148,7 @@
 }
 
 /* Create columns for listing of article links */
-.savage-eberron-core .toc-columns {
+div.savage-eberron-core .toc-columns {
   columns: 2;
   padding-bottom: .75em;
   border-bottom: 2px solid #8c160f;
@@ -145,24 +156,24 @@
 }
 
 /* float image to the right side */
-.savage-eberron-core img.right {
+div.savage-eberron-core img.right {
   float: right;
   margin: 5px 0 5px 5px;
 }
 
 /* float image to the left side */
-.savage-eberron-core img.left {
+div.savage-eberron-core img.left {
   float: left;
   margin: 5px 5px 5px 0;
 }
 
 /* Dragonmarked Houses Header in Lore */
-.savage-eberron-core .dragonmarked-header {
+div.savage-eberron-core .dragonmarked-header {
   background: none;
   height: 325px;
   position: relative;
 }
-.savage-eberron-core .dragonmarked-header .title {
+div.savage-eberron-core .dragonmarked-header .title {
   position: absolute;
   width: 75%;
   left: 12%;
@@ -171,21 +182,21 @@
   text-transform: uppercase;
   transform: translate(0, -50%);
 }
-.savage-eberron-core .dragonmarked-header .title p {
+div.savage-eberron-core .dragonmarked-header .title p {
   font-size: 48px;
   font-family: 'Anton';
   text-transform: uppercase;
 }
 
 /* style h4's like the rest of the headers */
-.savage-eberron-core h3 {
+div.savage-eberron-core h3 {
     font-family: 'Anton';
     font-weight: normal;
     text-transform: uppercase;
 }
 
 /* Float an aside to the right for content */
-.savage-eberron-core aside.floated-aside {
+div.savage-eberron-core aside.floated-aside {
   margin-right: 2%;
   margin-left: 2%;
   width: 35%;
@@ -193,34 +204,34 @@
   text-align: justify;
 }
 /* Center headers for the aside */
-.savage-eberron-core aside.floated-aside h2,
-.savage-eberron-core aside.floated-aside h3 {
+div.savage-eberron-core aside.floated-aside h2,
+div.savage-eberron-core aside.floated-aside h3 {
   text-align: center;
 }
 
 /*change some default SWADE styling for personal flavor */
 /* Change the margins around the figure tag */
-.savage-eberron-core .figure {
+div.savage-eberron-core .figure {
   margin: 2% auto;
 }
 /* Change the positioning of the bullets for the list to be more visible */
-.savage-eberron-core .red-bullet-list li:before {
+div.savage-eberron-core .red-bullet-list li:before {
   font-size:1.3em; /* set the font-size of the bullet if necessary. Make sure to use em or %*/
   margin-left: -.6em;
 }
 
 /* have a bullet be a star for mystic powers */
-.savage-eberron-core .red-bullet-list li.star:before {
+div.savage-eberron-core .red-bullet-list li.star:before {
   content:"\22C6"; /* /06DD is the numerical unicode for a star; */
   padding-right: .05em;
 }
 
 /* columns for available powers in Arcane Background description */
-.savage-eberron-core .available-powers {
+div.savage-eberron-core .available-powers {
   columns: 3;
   margin-left: .7em;
 }
-.savage-eberron-core .available-powers p {
+div.savage-eberron-core .available-powers p {
   padding-left: 5px;
   padding-right: 5px;
   text-align: justify;
@@ -230,11 +241,11 @@
 }
 
 /* When listing powers cap first letter, and lower case everything else. Italize the powers */
-.savage-eberron-core .list-powers {
+div.savage-eberron-core .list-powers {
   font-style: italic;
   text-transform: lowercase;
   display: block;
 }
-.savage-eberron-core .list-powers::first-letter {
+div.savage-eberron-core .list-powers::first-letter {
   text-transform: uppercase;
 }
