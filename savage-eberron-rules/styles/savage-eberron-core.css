@@ -4,6 +4,7 @@
   --black: #000;
   --red: #8c160f;
   --table-color: rgba(111, 87, 1, .2);
+  --table-class-color: #e8b676;
   --table-color-tint: rgba(245, 242, 233, .3);
 
   /* BORDERS */
@@ -248,4 +249,9 @@ div.savage-eberron-core .list-powers {
 }
 div.savage-eberron-core .list-powers::first-letter {
   text-transform: uppercase;
+}
+
+/* create a heading color for Classes in Edge summaries */
+div.savage-eberron-core .table tbody tr.main-class {
+  background-color: var(--table-class-color);
 }
