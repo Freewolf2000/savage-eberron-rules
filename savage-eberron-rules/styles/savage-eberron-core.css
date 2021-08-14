@@ -39,11 +39,15 @@ body.system-swade .table-draw .dice-formula {
 }
 /* Increase the size of the description of the table roll. */
 body.system-swade .table-description.savage-eberron-core {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 /* Increase the size of the text for the result to make it more legible. */
-body.system-swade .result-text .table-roll {
+body.system-swade .result-text .savage-eberron-core {
   font-size: 1.2em;
+}
+/* Remove the border around the image for the table result */
+.chat-message .table-draw .table-results .table-result img.result-image {
+  border: none;
 }
 
 /* Fix for different background images */
@@ -71,6 +75,17 @@ div.savage-eberron-core .bottom-spacer {
   margin-bottom: 20px !important;
 }
 
+/* to set the links if swade-core is not used */
+div.savage-eberron-core .swade-core a.entity-link {
+    background: initial;
+    border: initial;
+    white-space: initial;
+    word-break: initial;
+    padding: initial;
+    margin: initial;
+    color: var(--red);
+    text-decoration: underline;
+}
 /* highlight any links that are broken so they can be found */
 div.savage-eberron-core a.entity-link.broken {
   text-decoration: line-through;
