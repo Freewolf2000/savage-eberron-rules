@@ -32,11 +32,26 @@
   height: 20px;
 }
 
-
+/* Styles for the results of a table draw. */
+/* Hide the calculation of the table roll. */
+body.system-swade .table-draw .dice-formula {
+  display: none;
+}
+/* Increase the size of the description of the table roll. */
+body.system-swade .table-description.savage-eberron-core {
+  font-size: 1.2em;
+}
+/* Increase the size of the text for the result to make it more legible. */
+body.system-swade .result-text .table-roll {
+  font-size: 1.2em;
+}
 
 /* Fix for different background images */
+/* set some default fonts for when not using swade-core */
 div.savage-eberron-core {
   height: 100%;
+  font-family: var(--body-font-family);
+  padding: 3%;
 }
 
 /* center image or something in page, can be used in multiple images */
@@ -141,10 +156,11 @@ div.savage-eberron-core .demoTblDiv {
 }
 
 div.savage-eberron-core .toc-links-title {
+  background-color: #c58a87;
   border-top:2px solid #8c160f;
   border-bottom: 2px solid #8c160f;
   color: #8c160f;
-  background-color: #c58a87;
+  margin-top:20px;
   text-align: center;
 }
 
