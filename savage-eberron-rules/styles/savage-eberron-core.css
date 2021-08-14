@@ -76,7 +76,7 @@ div.savage-eberron-core .bottom-spacer {
 }
 
 /* to set the links if swade-core is not used */
-div.savage-eberron-core .swade-core a.entity-link {
+div.savage-eberron-core a.entity-link {
     background: initial;
     border: initial;
     white-space: initial;
