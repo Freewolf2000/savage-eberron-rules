@@ -285,6 +285,13 @@ div.savage-eberron-core .available-powers p {
   text-transform: lowercase;
 }
 
+/* format the inline brown background example that is used in edges */
+div.savage-eberron-core .embedded-example {
+  font-style: italic;
+  background-color: #e0d0ab;
+  padding: 4px 10px;
+}
+
 /* When listing powers cap first letter, and lower case everything else. Italize the powers */
 div.savage-eberron-core .list-powers {
   font-style: italic;
