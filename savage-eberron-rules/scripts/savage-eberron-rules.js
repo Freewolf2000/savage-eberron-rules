@@ -1,14 +1,14 @@
 Hooks.on("ready", async () => {
-  if(game.modules.get("compendium-folders") == undefined){
+  if (game.modules.get("compendium-folders") == undefined) {
     ui.notifications.error("Please download & enable COMPENDIUM FOLDERS module for SWADE-Core-Rules to function properly!")
-  } else if(game.modules.get("compendium-folders").active == false){
+  } else if (game.modules.get("compendium-folders").active == false) {
     ui.notifications.error("Please enable COMPENDIUM FOLDERS modules in this world for SWADE-Core-Rules to work properly!")
   }
 
   //Force Building Pack Indexes so Entity Links don't break
-  for(let pack of game.packs.entries){
-    if(pack.collection.includes("savage-eberron-rules"))
-    pack.getIndex();
+  for (let pack of game.packs.entries) {
+    if (pack.collection.includes("savage-eberron-rules"))
+      pack.getIndex();
   }
 
   // Register Tooltip Setting
@@ -20,7 +20,7 @@ Hooks.on("ready", async () => {
     config: true,
   })
   // Show tooltip if Setting is True
-  if(game.settings.get("savage-eberron-rules", "show-welcome-screen")){
+  if (game.settings.get("savage-eberron-rules", "show-welcome-screen")) {
     new Dialog({
       name: "Savage Worlds for the Eberron Campaign Setting",
       content: await renderTemplate('modules/savage-eberron-rules/templates/welcomescreen.hbs'),
@@ -28,7 +28,7 @@ Hooks.on("ready", async () => {
         ok: {
           label: "Ok",
           callback: async (html) => {
-            if(html.find("#hide-tooltip")[0].checked){
+            if (html.find("#hide-tooltip")[0].checked) {
               game.settings.set("savage-eberron-rules", "show-welcome-screen", false)
             }
           }
@@ -47,7 +47,7 @@ Hooks.on("ready", async () => {
     config: true
   })
 
-  if(game.settings.get('savage-eberron-rules', 'entity-linking-css')){
+  if (game.settings.get('savage-eberron-rules', 'entity-linking-css')) {
     let rule = `
     .swade-core a.entity-link,
     .swade-core a.inline-roll {
@@ -60,17 +60,35 @@ Hooks.on("ready", async () => {
     let sheet = window.document.styleSheets[0]
     sheet.insertRule(rule, sheet.cssRules.length);
   }
+
+  if (game.user.isGM) {
+      // Add GM Secret section type
+      const customFormats = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
+      customFormats.items.push(
+          {
+              title: "Read Aloud",
+              block: 'section',
+              classes: 'read-aloud',
+              wrapper: true
+          }
+      );
+  }
+
+  // Wrap TextEditor.create to add the appropriate class to the created editor
+//  const oldCreate = TextEditor.create;
+//  TextEditor.create = async function (options={}, content="") {
+//      const editor = await oldCreate.apply(this, arguments);
+//
+//      // If the user is a GM, add the "game-master" class to the tinyMCE iframe body.
+//      if (game.user.isGM) {
+//          editor.dom.addClass("tinymce", "game-master");
+//      }
+//
+//      return editor;
+//  }
 });
 
-function _replaceCurrency(sheet, html, entity) {
-  // Bennies
-  //html.find(".currency").remove();
-
-  let currencyFields = `<div class="form-group currency"><label>Galifars</label><span class="form-fields"><input name="data.details.galifars" type="text" value="" placeholder="Galifars"></span></div>`;
-  html.find(".currency").append(currencyFields);
-};
-
 Hooks.on("renderSwadeCharacterSheet", (sheet, html, entity) => {
-    _replaceCurrency(sheet, html, entity);
-  }
+  _replaceCurrency(sheet, html, entity);
+}
 });
