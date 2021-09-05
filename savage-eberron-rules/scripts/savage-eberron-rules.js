@@ -60,32 +60,6 @@ Hooks.on("ready", async () => {
     let sheet = window.document.styleSheets[0]
     sheet.insertRule(rule, sheet.cssRules.length);
   }
-
-  if (game.user.isGM) {
-      // Add GM Secret section type
-      const customFormats = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
-      customFormats.items.push(
-          {
-              title: "Read Aloud",
-              block: 'section',
-              classes: 'read-aloud',
-              wrapper: true
-          }
-      );
-  }
-
-  // Wrap TextEditor.create to add the appropriate class to the created editor
-//  const oldCreate = TextEditor.create;
-//  TextEditor.create = async function (options={}, content="") {
-//      const editor = await oldCreate.apply(this, arguments);
-//
-//      // If the user is a GM, add the "game-master" class to the tinyMCE iframe body.
-//      if (game.user.isGM) {
-//          editor.dom.addClass("tinymce", "game-master");
-//      }
-//
-//      return editor;
-//  }
 });
 
 Hooks.on("renderSwadeCharacterSheet", (sheet, html, entity) => {
