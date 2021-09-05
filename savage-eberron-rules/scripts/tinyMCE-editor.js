@@ -1,28 +1,30 @@
 Hooks.on("ready", async () => {
     // Add custom stylesheet to TinyMCE Config
-//    CONFIG.TinyMCE.content_css.push("/modules/gm-secrets/gm-secret-style.css");
+    // CONFIG.TinyMCE.content_css.push("/modules/gm-secrets/gm-secret-style.css");
 
     if (game.user.isGM) {
         // Add GM Secret section type
         const customFormats = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
+        const customFormats2 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         customFormats.items.push(
             {
                 title: "Read Aloud",
                 block: 'section',
                 classes: 'read-aloud',
                 wrapper: true
-            },
-            customFormats.items.push(
+            }
+        );
+        customFormats2.items.push(
             {
                 title: "Graph Paper",
                 block: 'div',
-                classes: 'graph-half',
+                classes: 'graph-paper',
                 wrapper: true
             }
         );
 
         // If the user is a GM, add a unique class to the body of the document so that we can selectively hide content when this class doesn't exist.
-        $("body").addClass("game-master");
+        //$("body").addClass("game-master");
     }
 
     // Wrap TextEditor.create to add the appropriate class to the created editor
