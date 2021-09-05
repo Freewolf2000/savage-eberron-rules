@@ -10,7 +10,7 @@
    "manifest": "https://raw.githubusercontent.com/Freewolf2000/savage-eberron-rules/main/savage-eberron-rules/module.json",
    "download": "https://github.com/Freewolf2000/savage-eberron-rules/raw/main/savage-eberron-rules.zip",
    "esmodules": [
-       "./scripts/savage-eberron-rules.js"
+       "./scripts/savage-eberron-rules.js",
        "./scripts/tinyMCE-editor.js"
    ],
    "styles": [
