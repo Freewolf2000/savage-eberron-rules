@@ -11,6 +11,13 @@ Hooks.on("ready", async () => {
                 block: 'section',
                 classes: 'read-aloud',
                 wrapper: true
+            },
+            customFormats.items.push(
+            {
+                title: "Graph Paper",
+                block: 'div',
+                classes: 'graph-half',
+                wrapper: true
             }
         );
 
