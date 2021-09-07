@@ -6,6 +6,7 @@ Hooks.on("ready", async () => {
         // Add GM Secret section type
         const customFormats = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats2 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
+        const customFormats3 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         customFormats.items.push(
             {
                 title: "Read Aloud",
@@ -19,6 +20,14 @@ Hooks.on("ready", async () => {
                 title: "Graph Paper",
                 block: 'div',
                 classes: 'graph-paper',
+                wrapper: true
+            }
+        );
+        customFormats3.items.push(
+            {
+                title: "Savage Eberron Wrapper",
+                block: 'div',
+                classes: 'swade-core savage-eberron-core',
                 wrapper: true
             }
         );
