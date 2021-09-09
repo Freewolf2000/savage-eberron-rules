@@ -11,6 +11,27 @@ Hooks.on("ready", async () => {
       pack.getIndex();
   }
 
+  //Add sidebar clipping mask to page
+  $(document.body).append(await renderTemplate("modules/savage-eberron-rules/assets/layout/sidebar-mask.html"));
+
+  console.debug("Savage Eberron Core | Initalizing....")
+});
+
+Hooks.on("renderJournalSheet", (sheet, html, data) => {
+  const journalClass = "sweb-core";
+  const wrapperClass = "sweb-wrapper";
+
+  const dlEntry = html.find(`.${journalClass}`);
+  if (dlEntry.length) html.addClass(wrapperClass);
+
+  const select  = html.find("select[name=folder]");
+  const sel     = select[0];
+  const chapter = sel.options[sel.selectedIndex].innerHTML;
+
+  select.replaceWith(`<h2 class="chapter-label">${chapter}</h2>`);
+});
+
+/*
   // Register Tooltip Setting
   game.settings.register('savage-eberron-rules', 'show-welcome-screen', {
     name: "Show Welcome Screen on Start",
@@ -61,6 +82,7 @@ Hooks.on("ready", async () => {
     sheet.insertRule(rule, sheet.cssRules.length);
   }
 });
+*/
 
 Hooks.on("renderSwadeCharacterSheet", (sheet, html, entity) => {
   _replaceCurrency(sheet, html, entity);
