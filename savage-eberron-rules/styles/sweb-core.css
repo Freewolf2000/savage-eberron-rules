@@ -1,6 +1,7 @@
 .sweb-wrapper, .sweb-core, .sweb-sheet {
 	--red: #940609;
 	--tan: #ece5b2;
+	--green:#008000;
 
 	--table-color-a: #e1d9be;
 	--table-color-b: #f4f1e7;
@@ -793,8 +794,8 @@
 	text-decoration: underline;
 }
 .sweb-core a.entity-link.broken {
-	color: inherit;
-	text-decoration: inherit;
+	color: var(--green);
+	text-decoration: line-trough;
 	cursor: text;
 }
 .sweb-core a.entity-link:hover {

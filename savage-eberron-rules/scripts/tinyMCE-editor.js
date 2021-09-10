@@ -7,7 +7,17 @@ Hooks.on("ready", async () => {
         const customFormats = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats2 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats3 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
+        const customFormats4 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
+        const customFormats5 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         customFormats.items.push(
+            {
+                title: "Savage Eberron Wrapper",
+                block: 'div',
+                classes: 'sweb-core',
+                wrapper: true
+            }
+        );
+        customFormats1.items.push(
             {
                 title: "Read Aloud",
                 block: 'section',
@@ -23,12 +33,20 @@ Hooks.on("ready", async () => {
                 wrapper: true
             }
         );
-        customFormats3.items.push(
+        customFormats4.items.push(
             {
-                title: "Savage Eberron Wrapper",
-                block: 'div',
-                classes: 'swade-core savage-eberron-core',
+                title: "List Heading",
+                block: 'span',
+                classes: 'list-heading',
                 wrapper: true
+            }
+        );
+        customFormats4.items.push(
+            {
+                title: "List Star Icon",
+                block: 'li',
+                classes: 'star-icon',
+                wrapper: false
             }
         );
 
