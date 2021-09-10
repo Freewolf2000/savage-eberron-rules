@@ -1,0 +1,25 @@
+@font-face {
+	font-family: "Treacherous Corners";
+	src: url("../assets/fonts/CCTreacherousCorners.otf") format("opentype");
+}
+
+/* Romic Regular */
+@font-face {
+	font-family: "Romic";
+	src: url("../assets/fonts/Romic-Medium.otf") format("opentype");
+}
+@font-face {
+	font-family: "Romic";
+	src: url("../assets/fonts/Romic-Bold.otf") format("opentype");
+	font-weight: bold;
+}
+@font-face {
+	font-family: "Romic";
+	src: url("../assets/fonts/Romic-ExtraBold.otf") format("opentype");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Romic";
+	src: url("../assets/fonts/Romic-Light.otf") format("opentype");
+	font-weight: 300;
+}

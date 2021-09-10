@@ -1,0 +1,114 @@
+/* Sidebar */
+
+.sweb-core aside.sidebar {
+	padding: 2em 1.25em;
+	position: relative;
+	filter: drop-shadow(0px 0px 7px gray);
+}
+
+.sweb-core aside.sidebar.float-right {
+	margin-right: -1.1em;
+}
+.sweb-core aside.sidebar.float-left {
+	margin-left: -1.1em;
+}
+
+.sweb-core aside.sidebar::before {
+	content: " ";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-image: url("../assets/layout/red-lighter-paper.webp");
+	clip-path: url(#sweb-sidebar-clip);
+	background-color: #ffffff4a;
+	background-blend-mode: overlay;
+	background-size: cover;
+}
+.sweb-core aside.sidebar::after {
+	content: " ";
+	width: 110%;
+	height: calc(100% + 1.5em);
+	position: absolute;
+	left: -5%;
+	background-image:
+		url("../assets/layout/wood-bar.webp"),
+		url("../assets/layout/wood-bar.webp");
+	background-position: top center, bottom center;
+	background-size: 100% 2.5em;
+	background-repeat: no-repeat;
+	bottom: -.7em;
+	pointer-events: none;
+}
+
+.sweb-core .sidebar h1 {
+	font-size: 1.8em;
+	/* display: flex; */
+	align-items: center;
+	margin: auto;
+	width: 100%;
+	color: var(--red);
+}
+
+.sweb-core aside.handwriting {
+	background-image: url("../assets/layout/paper-grunge.webp");
+	background-size: 100% 100%;
+	font-family: Jacques;
+	font-size: 1.4em;
+	transform: rotate(-1deg);
+	padding: 1em;
+	margin: 1em auto;
+}
+
+/* Class Statblock */
+
+.sweb-core .class-container .statblock {
+	border-image: url("../assets/layout/class-table-border.svg");
+	border-image-width: 8px 0;
+	border-image-slice: 5 0;
+	border-style: solid;
+	padding: .5em 0;
+	display: flex;
+	flex-direction: row;
+	/* flex-wrap: wrap; */
+	margin: 0;
+}
+.sweb-core .class-container .statblock div {
+	padding: 0 .5em;
+}
+
+.sweb-core .class-container .statblock .red-label {
+	white-space: nowrap;
+}
+
+.sweb-core .class-container .statblock div:nth-of-type(1) {
+	padding-left: 0;
+}
+.sweb-core .class-container .statblock div:nth-of-type(2) {
+	border-image: url("../assets/layout/class-table-border-short.svg");
+	border-image-width: 0 6px;
+	border-image-slice: 0 6;
+	border-style: solid;
+}
+
+.sweb-core .class-container .statblock ul {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+}
+.sweb-core .class-container .statblock ul li {
+	display: inline;
+	padding: 0;
+}
+
+.sweb-core .class-container .statblock div:nth-of-type(1) li,
+.sweb-core .class-container .statblock div:nth-of-type(2) li {
+	white-space: nowrap;
+}
+.sweb-core .class-container .statblock div:nth-of-type(3) li {
+	padding-left: .5ch;
+	text-indent: -.5ch;
+}
