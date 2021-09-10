@@ -795,7 +795,7 @@
 }
 .sweb-core a.entity-link.broken {
 	color: var(--green);
-	text-decoration: line-trough;
+	text-decoration: line-through;
 	cursor: text;
 }
 .sweb-core a.entity-link:hover {

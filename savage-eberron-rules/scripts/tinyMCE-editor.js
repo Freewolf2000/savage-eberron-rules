@@ -5,10 +5,9 @@ Hooks.on("ready", async () => {
     if (game.user.isGM) {
         // Add GM Secret section type
         const customFormats = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
+        const customFormats1 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats2 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats3 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
-        const customFormats4 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
-        const customFormats5 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         customFormats.items.push(
             {
                 title: "Savage Eberron Wrapper",
@@ -27,21 +26,13 @@ Hooks.on("ready", async () => {
         );
         customFormats2.items.push(
             {
-                title: "Graph Paper",
-                block: 'div',
-                classes: 'graph-paper',
-                wrapper: true
-            }
-        );
-        customFormats4.items.push(
-            {
                 title: "List Heading",
                 block: 'span',
                 classes: 'list-heading',
                 wrapper: true
             }
         );
-        customFormats4.items.push(
+        customFormats3.items.push(
             {
                 title: "List Star Icon",
                 block: 'li',
