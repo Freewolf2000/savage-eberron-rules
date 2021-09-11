@@ -1,3 +1,7 @@
+/* Remove the border around the image for the table result */
+.chat-message .table-draw .table-results .table-result img.result-image {
+  border: none;
+}
 
 /* highlilht text to read out loud */
 .sweb-core .read-aloud {
@@ -11,7 +15,6 @@
   color: #333;
   font-style: italic;
 }
-
 
 /* columns for available powers in Arcane Background description */
 .sweb-core .available-powers {
