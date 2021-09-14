@@ -8,6 +8,7 @@ Hooks.on("ready", async () => {
         const customFormats1 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats2 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats3 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
+        const customFormats4 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         customFormats.items.push(
             {
                 title: "Savage Eberron Wrapper",
@@ -19,8 +20,8 @@ Hooks.on("ready", async () => {
         customFormats1.items.push(
             {
                 title: "Read Aloud",
-                block: 'section',
-                classes: 'read-aloud',
+                block: 'aside',
+                classes: ' sidebar read-aloud',
                 wrapper: true
             }
         );
@@ -37,6 +38,14 @@ Hooks.on("ready", async () => {
                 title: "List Heading",
                 block: 'span',
                 classes: 'list-heading',
+                wrapper: true
+            }
+        );
+        customFormatsp.items.push(
+            {
+                title: "Example Paragraph",
+                block: 'p',
+                classes: 'example',
                 wrapper: true
             }
         );

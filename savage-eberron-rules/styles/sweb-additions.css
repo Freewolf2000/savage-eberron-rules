@@ -4,6 +4,7 @@
 }
 
 /* highlilht text to read out loud */
+/*
 .sweb-core .read-aloud {
   display: inline-block;
   width: 95%;
@@ -14,6 +15,14 @@
   border: solid 5px #333;
   color: #333;
   font-style: italic;
+}
+*/
+/* highlilht text to read out loud */
+.sweb-core aside.read-aloud {
+  font-family: "Romic";
+  font-style: italic;
+  margin-top: 15px;
+  padding: 1em 1.25em;
 }
 
 /* columns for available powers in Arcane Background description */
@@ -40,7 +49,6 @@
   text-transform: uppercase;
 }
 
-
 /* Create a 2 column list for a toc */
 .sweb-core .toc-columns {
   columns: 2
@@ -51,4 +59,5 @@
   text-transform: uppercase;
   font-family: "Romic";
   font-weight: bold;
+  margin-top: 0;
 }
