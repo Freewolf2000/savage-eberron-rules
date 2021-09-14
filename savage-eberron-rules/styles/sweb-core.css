@@ -258,6 +258,12 @@
 .sweb-core .centered {
 	text-align: center;
 }
+.sweb-core img.centered {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
 .sweb-core .white {
 	color: var(--text-color-white);
 }

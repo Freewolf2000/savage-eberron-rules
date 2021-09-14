@@ -3,7 +3,7 @@
    "title": "Rule Set: Savage Eberron",
    "description": "This is the additional ruleset for the Eberron Campaign Setting converted to Savage Worlds Adventure Edition. All needed additional Edges, Powers, Hindrances, Races, Equipment and Magical Items for the Eberron Campaign Setting have been added.",
    "author": "Freewolf2000",
-   "version": "0.16.3.6",
+   "version": "0.16.4",
    "minimumCoreVersion": "0.7.9",
    "compatibleCoreVersion":"0.8.9",
    "url": "https://github.com/Freewolf2000/savage-eberron-rules",
@@ -21,14 +21,6 @@
    ],
    "packs": [
      {
-       "label": "Savage Eberron Characters",
-       "name": "savage-eberron-characters",
-       "entity": "Actor",
-       "path": "packs/savage-eberron-characters.db",
-       "system": "swade",
-       "module": "savage-eberron-rules"
-     },
-     {
        "label": "Savage Eberron Edges",
        "name": "savage-eberron-edges",
        "entity": "Item",
@@ -37,10 +29,10 @@
        "module": "savage-eberron-rules"
      },
      {
-       "label": "Savage Eberron Equipment",
-       "name": "savage-eberron-equipment",
+       "label": "Savage Eberron Gear",
+       "name": "savage-eberron-gear",
        "entity": "Item",
-       "path": "packs/savage-eberron-equipment.db",
+       "path": "packs/savage-eberron-gear.db",
        "system": "swade",
        "module": "savage-eberron-rules"
      },
@@ -61,14 +53,6 @@
        "module": "savage-eberron-rules"
      },
      {
-       "label": "Savage Eberron Lore Tables",
-       "name": "savage-eberron-lore-tables",
-       "entity": "RollTable",
-       "path": "packs/savage-eberron-lore-tables.db",
-       "system": "swade",
-       "module": "savage-eberron-rules"
-     },
-     {
        "label": "Savage Eberron Powers",
        "name": "savage-eberron-powers",
        "entity": "Item",
@@ -77,26 +61,10 @@
        "module": "savage-eberron-rules"
      },
      {
-       "label": "Savage Eberron Racial Abilities",
-       "name": "savage-eberron-racial-abilities",
-       "entity": "Item",
-       "path": "packs/savage-eberron-racial-abilities.db",
-       "system": "swade",
-       "module": "savage-eberron-rules"
-     },
-     {
        "label": "Savage Eberron Rules",
        "name": "savage-eberron-rules",
        "entity": "JournalEntry",
        "path": "packs/savage-eberron-rules.db",
-       "system": "swade",
-       "module": "savage-eberron-rules"
-     },
-     {
-       "label": "Savage Eberron Rules Tables",
-       "name": "savage-eberron-rules-tables",
-       "entity": "RollTable",
-       "path": "packs/savage-eberron-rules-tables.db",
        "system": "swade",
        "module": "savage-eberron-rules"
      },
@@ -125,18 +93,10 @@
        "module": "savage-eberron-rules"
      },
      {
-       "label": "Savage Eberron Treasure",
-       "name": "savage-eberron-treasure",
-       "entity": "Item",
-       "path": "packs/savage-eberron-treasure.db",
-       "system": "swade",
-       "module": "savage-eberron-rules"
-     },
-     {
-       "label": "Savage Eberron Vehicles",
-       "name": "savage-eberron-vehicles",
-       "entity": "Actor",
-       "path": "packs/savage-eberron-vehicles.db",
+       "label": "Savage Eberron Tables",
+       "name": "savage-eberron-tables",
+       "entity": "RollTable",
+       "path": "packs/savage-eberron-tables.db",
        "system": "swade",
        "module": "savage-eberron-rules"
      }

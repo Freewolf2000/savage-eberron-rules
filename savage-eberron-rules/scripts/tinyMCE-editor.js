@@ -7,6 +7,7 @@ Hooks.on("ready", async () => {
         const customFormats = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats1 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats2 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
+        const customFormats3 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         customFormats.items.push(
             {
                 title: "Savage Eberron Wrapper",
@@ -28,6 +29,14 @@ Hooks.on("ready", async () => {
                 title: "Wide Page Heading",
                 block: 'h1',
                 classes: 'wide',
+                wrapper: true
+            }
+        );
+        customFormats3.items.push(
+            {
+                title: "List Heading",
+                block: 'span',
+                classes: 'list-heading',
                 wrapper: true
             }
         );

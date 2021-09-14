@@ -39,3 +39,16 @@
 .sweb-core .list-powers::first-letter {
   text-transform: uppercase;
 }
+
+
+/* Create a 2 column list for a toc */
+.sweb-core .toc-columns {
+  columns: 2
+}
+
+.sweb-core .toc-columns p {
+  font-size: .9em;
+  text-transform: uppercase;
+  font-family: "Romic";
+  font-weight: bold;
+}
