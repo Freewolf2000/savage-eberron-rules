@@ -42,7 +42,7 @@ Hooks.on("ready", async () => {
                 wrapper: true
             }
         );
-        customFormatsp4.items.push(
+        customFormats4.items.push(
             {
                 title: "Example Inline",
                 block: 'p',
@@ -50,7 +50,7 @@ Hooks.on("ready", async () => {
                 wrapper: true
             }
         );
-        customFormatsp5.items.push(
+        customFormats5.items.push(
             {
                 title: "Example Heading",
                 block: 'h2',
