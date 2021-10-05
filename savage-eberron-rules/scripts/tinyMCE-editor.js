@@ -9,9 +9,6 @@ Hooks.on("ready", async () => {
         const customFormats2 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats3 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         const customFormats4 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
-        const customFormats5 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
-        const customFormats6 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
-        const customFormats7 = CONFIG.TinyMCE.style_formats.find(x => x.title === "Custom");
         customFormats.items.push(
             {
                 title: "Savage Eberron Wrapper",
@@ -23,7 +20,7 @@ Hooks.on("ready", async () => {
         customFormats1.items.push(
             {
                 title: "Read Aloud",
-                block: 'p',
+                block: 'aside',
                 classes: 'read-aloud',
                 wrapper: true
             }
@@ -49,30 +46,6 @@ Hooks.on("ready", async () => {
                 title: "Example Inline",
                 block: 'p',
                 classes: 'example',
-                wrapper: true
-            }
-        );
-        customFormats5.items.push(
-            {
-                title: "Aftermath Heading",
-                block: 'h2',
-                classes: 'aftermath',
-                wrapper: true
-            }
-        );
-        customFormats6.items.push(
-            {
-                title: "Example Heading",
-                block: 'h2',
-                classes: 'example',
-                wrapper: true
-            }
-        );
-        customFormats7.items.push(
-            {
-                title: "Scroll Sidebar",
-                block: 'aside',
-                classes: 'sidebar',
                 wrapper: true
             }
         );

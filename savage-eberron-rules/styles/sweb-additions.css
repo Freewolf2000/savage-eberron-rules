@@ -23,9 +23,10 @@
 */
 
 /* Paragraph Styles */
-.sweb-core p.read-aloud {
+.sweb-core aside.read-aloud {
 	background-color: var(--read-aloud-bg-color);
 	font-style: italic;
+  font-family: "Romic";
 	padding: .2em .5em;
 	border-radius: .5em;
 }
@@ -59,7 +60,7 @@
 	color: var(--red);
 	background-color: var(--read-aloud-bg-color);
 	text-align: left;
-	padding: .1em;
+	padding: .1em .1em .1em .5em;
 	border-top: .1em solid currentColor;
 	border-bottom: .1em solid currentColor;
 }
