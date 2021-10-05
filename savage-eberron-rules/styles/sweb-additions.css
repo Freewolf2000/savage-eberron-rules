@@ -49,6 +49,16 @@
   text-transform: uppercase;
 }
 
+/* heading for aftermath section modeled after RotRL */
+.sweb-core h2.aftermath {
+	color: var(--red);
+	background-color: #f3dcbe;
+	text-align: left;
+	padding: .1em;
+	border-top: .1em solid currentColor;
+	border-bottom: .1em solid currentColor;
+}
+
 /* Create a 2 column list for a toc */
 .sweb-core .toc-columns {
   columns: 2

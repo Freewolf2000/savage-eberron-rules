@@ -433,7 +433,7 @@
 	font-family: "Treacherous Corners";
 	text-transform: uppercase;
 	letter-spacing: .1ch;
-	color: black;
+	color: var(--red);
 	font-size: 1.8em;
 	border-bottom: .1em solid currentColor;
 	padding-bottom: .1em;
