@@ -23,7 +23,7 @@ Hooks.on("ready", async () => {
             {
                 title: "Read Aloud",
                 block: 'aside',
-                classes: ' sidebar read-aloud',
+                classes: 'read-aloud',
                 wrapper: true
             }
         );
