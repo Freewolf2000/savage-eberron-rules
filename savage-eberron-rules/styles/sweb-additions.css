@@ -1,3 +1,7 @@
+.sweb-wrapper, .sweb-core, .sweb-sheet {
+  --read-aloud-bg-color: #f3dcbe;
+}
+
 /* Remove the border around the image for the table result */
 .chat-message .table-draw .table-results .table-result img.result-image {
   border: none;
@@ -17,12 +21,13 @@
   font-style: italic;
 }
 */
-/* highlilht text to read out loud */
-.sweb-core aside.read-aloud {
-  font-family: "Romic";
-  font-style: italic;
-  margin-top: 15px;
-  padding: 1em 1.25em;
+
+/* Paragraph Styles */
+.sweb-core p.read-aloud {
+	background-color: var(--read-aloud-bg-color);
+	font-style: italic;
+	padding: .2em .5em;
+	border-radius: .5em;
 }
 
 /* columns for available powers in Arcane Background description */
@@ -52,7 +57,7 @@
 /* heading for aftermath section modeled after RotRL */
 .sweb-core h2.aftermath {
 	color: var(--red);
-	background-color: #f3dcbe;
+	background-color: var(--read-aloud-bg-color);
 	text-align: left;
 	padding: .1em;
 	border-top: .1em solid currentColor;
