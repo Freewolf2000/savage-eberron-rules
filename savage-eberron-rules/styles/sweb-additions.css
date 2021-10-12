@@ -54,7 +54,7 @@
 .sweb-core .list-powers::first-letter {
   text-transform: uppercase;
 }
-
+/* Headings */
 /* heading for aftermath section modeled after RotRL */
 .sweb-core h2.aftermath {
 	color: var(--red);
