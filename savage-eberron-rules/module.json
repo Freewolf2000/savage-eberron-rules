@@ -3,9 +3,9 @@
    "title": "Savage Eberron",
    "description": "This is the additional ruleset for the Eberron Campaign Setting converted to Savage Worlds Adventure Edition. All needed additional Edges, Powers, Hindrances, Races, Equipment and Magical Items for the Eberron Campaign Setting have been added.",
    "author": "Freewolf2000",
-   "version": "0.16.5.3",
+   "version": "0.16.6.0",
    "minimumCoreVersion": "0.7.9",
-   "compatibleCoreVersion":"0.8.9",
+   "compatibleCoreVersion": "9",
    "url": "https://github.com/Freewolf2000/savage-eberron-rules",
    "manifest": "https://raw.githubusercontent.com/Freewolf2000/savage-eberron-rules/main/savage-eberron-rules/module.json",
    "download": "https://github.com/Freewolf2000/savage-eberron-rules/raw/main/savage-eberron-rules.zip",
@@ -25,6 +25,14 @@
        "name": "savage-eberron-action-deck",
        "entity": "JournalEntry",
        "path": "packs/savage-eberron-action-deck.db",
+       "system": "swade",
+       "module": "savage-eberron-rules"
+     },
+     {
+       "label": "Savage Eberron Decks",
+       "name": "savage-eberron-decks",
+       "entity": "Cards",
+       "path": "packs/savage-eberron-decks.db",
        "system": "swade",
        "module": "savage-eberron-rules"
      },
