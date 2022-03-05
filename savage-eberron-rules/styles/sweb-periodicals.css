@@ -1,0 +1,18 @@
+.sweb-periodicals table {}
+
+.sweb-periodicals tr:nth-of-type(odd) {
+  background-color: none;
+}
+.sweb-periodicals tr:nth-of-type(even) {
+  background-color: none;
+}
+.sweb-periodicals table td:first-child {
+  padding-left: ;
+}
+.sweb-periodicals .justify {
+  text-align: justify;
+}
+.sweb-periodicals td.article,
+.sweb-periodicals th.article {
+  vertical-align:top;
+}
