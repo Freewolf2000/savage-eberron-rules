@@ -1,3 +1,4 @@
+/* Treacherous Corners */
 @font-face {
 	font-family: "Treacherous Corners";
 	src: url("../assets/fonts/CCTreacherousCorners.otf") format("opentype");
@@ -22,4 +23,34 @@
 	font-family: "Romic";
 	src: url("../assets/fonts/Romic-Light.otf") format("opentype");
 	font-weight: 300;
+}
+
+/* Contender */
+@font-face {
+	font-family: "Contender";
+	src: url("../assets/fonts/Contender.otf") format("opentype");
+}
+
+/* Crossroads */
+@font-face {
+	font-family: "Crossroads";
+	src: url("../assets/fonts/Crossroads.ttf") format("truetype");
+}
+
+/* Excluded */
+@font-face {
+	font-family: "Excluded";
+	src: url("../assets/fonts/ExcludedItalic.ttf") format("truetype");
+}
+
+/* Olde English */
+@font-face {
+	font-family: "Olde English";
+	src: url("../assets/fonts/OldeEnglish.ttf") format("truetype");
+}
+
+/* Olivetti-Lettera */
+@font-face {
+	font-family: "Olivetti";
+	src: url("../assets/fonts/Olivetti-Lettera.ttf") format("truetype");
 }

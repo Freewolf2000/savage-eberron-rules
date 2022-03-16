@@ -30,3 +30,17 @@ Hooks.on("renderJournalSheet", (sheet, html, data) => {
 
   select.replaceWith(`<h2 class="chapter-label">${chapter}</h2>`);
 });
+
+Hooks.on("renderJournalSheet", (sheet, html, data) => {
+  const journalClass = "sweb-periodicals";
+  const wrapperClass = "sweb-wrapper sweb-periodicals-wrapper";
+
+  const dlEntry = html.find(`.${journalClass}`);
+  if (dlEntry.length) html.addClass(wrapperClass);
+
+  const select  = html.find("select[name=folder]");
+  const sel     = select[0];
+  const chapter = sel.options[sel.selectedIndex].innerHTML;
+
+  select.replaceWith(`<h2 class="chapter-label">${chapter}</h2>`);
+});

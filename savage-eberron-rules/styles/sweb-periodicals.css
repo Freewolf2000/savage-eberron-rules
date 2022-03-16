@@ -1,18 +1,174 @@
-.sweb-periodicals table {}
-
-.sweb-periodicals tr:nth-of-type(odd) {
-  background-color: none;
+/* JOURNAL WRAPPER */
+.journal-sheet.sweb-periodicals-wrapper, .sweb-sheet {
+    background-image: url("../assets/layout/table-parchment.webp");
+    background-size: 100% 100%;
 }
-.sweb-periodicals tr:nth-of-type(even) {
-  background-color: none;
+.journal-sheet.sweb-periodicals-wrapper:before,
+.journal-sheet.sweb-periodicals-wrapper:after {
+	display: none;
+}
+
+.journal-sheet.sweb-periodicals-wrapper .window-header .window-title {
+  display: none;
+}
+.journal-sheet.sweb-periodicals-wrapper .chapter-label {
+  font-family: "Olde English";
+}
+/* TABLES */
+.sweb-periodicals table {
+  font-family: "Olivetti";
+  font-size: 1em;
+	background: none;
+	border: none;
 }
 .sweb-periodicals table td:first-child {
-  padding-left: ;
+  padding-left: .75em;
+}
+.sweb-periodicals table td,
+.sweb-periodicals table th {
+  padding: .25em .75em;
+}
+.sweb-periodicals table td.article,
+.sweb-periodicals table th.article,
+.sweb-periodicals table td.advert {
+  vertical-align:top;
+}
+.sweb-periodicals tr:nth-of-type(odd) {
+  background-color: initial;
+}
+.sweb-periodicals tr:nth-of-type(even) {
+  background-color: initial;
+}
+
+/* HEADINGS */
+.sweb-periodicals table h1 {
+  font-family: "Excluded";
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--red);
+  padding-bottom: .1em;
+  margin-bottom: .2em;
+  border: none;
+}
+.sweb-periodicals table h1.sharn-inquisitive-title {
+  font-family: "Olde English";
+  color: var(--black);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: .2ch;
+  font-size: 3.5em;
+  font-weight: bold;
+}
+.sweb-periodicals table h2,
+.sweb-periodicals table h3,
+.sweb-periodicals table h4 {
+  font-family: "Crossroads";
+}
+.sweb-periodicals table h2 {
+  font-size: 1.6em;
+  color: var(--red);
+  text-align: center;
+}
+.sweb-periodicals table h3 {
+  font-size: 1.2em;
+  text-align: center;
+  color: var(--black);
+}
+.sweb-periodicals table h4 {
+  margin: 0;
+  color: var(--red);
+}
+
+/* ALIGNMENT */
+.sweb-periodicals .left {
+	text-align: left;
+}
+.sweb-periodicals .right {
+	text-align: right;
+}
+.sweb-periodicals .centered {
+	text-align: center;
 }
 .sweb-periodicals .justify {
   text-align: justify;
 }
-.sweb-periodicals td.article,
-.sweb-periodicals th.article {
-  vertical-align:top;
+
+/* BORDERS */
+.sweb-periodicals .border-bottom {
+  border-bottom: 2px solid currentColor;
+}
+.sweb-periodicals .border-top {
+  border-top: 2px solid currentColor;
+}
+.sweb-periodicals .border-left {
+  border-left: 2px solid currentColor;
+}
+.sweb-periodicals .border-right {
+  border-right: 2px solid currentColor;
+}
+
+/* IMAGES */
+.sweb-periodicals img {
+	border: none;
+	shape-margin: 1em;
+}
+.sweb-periodicals img.centered {
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 95%;
+}
+.sweb-periodicals img.right {
+  display: block;
+  margin-right: 0em;
+	margin-left: .5em;
+	float: right;
+}
+.sweb-periodicals img.left {
+  display: block;
+  margin-left: 0em;
+	margin-right: .5em;
+	float: left;
+}
+.sweb-periodicals img.seventyfive {
+  width: calc(75% + 2em);
+  height: calc(75% + 2em);
+}
+.sweb-periodicals img.fifty {
+  width: calc(50% + 2em);
+  height: calc(50% + 2em);
+}
+.sweb-periodicals img.twentyfive {
+  width: calc(25% + 1em);
+  height: calc(25% + 1em);
+}
+.sweb-periodicals img.twenty {
+  width: calc(20% + 1em);
+  height: calc(20% + 1em);
+}
+
+/* HIGHLIGHT STORY */
+.sweb-periodicals div.highlight {
+  border: 2px solid  var(--red);
+  padding: .3em;
+  background-color: white;
+  font-family: "Contender";
+}
+
+/* CAPITALIZE FIRST LETTER OF STORY */
+.sweb-periodicals table p.paragraph-cap:first-letter {
+	color: var(--red);
+	float: left;
+	text-transform: uppercase;
+	font-size: 5.5em;
+	line-height: 1em;
+	padding-right: 0;
+	margin-top: -.15em;
+	margin-bottom: -.2em;
+}
+@supports (-moz-appearance:none) {
+	.sweb-periodicals table p.paragraph-cap:first-letter {
+		margin-bottom: -.1em;
+	}
 }
