@@ -77,3 +77,11 @@
   font-weight: bold;
   margin-top: 0;
 }
+
+/* Monk's Enhanced Journals Modifications */
+.monks-enhanced-journal input[name="name"] {
+    display: inherit !important;
+}
+.journal-sheet.sweb-wrapper input, .journal-sheet.sweb-wrapper button[type=submit], .journal-sheet.sweb-wrapper select {
+    color: var(--table-subheading-color);
+}
