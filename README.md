@@ -1,5 +1,5 @@
 # savage-eberron
-Manifest URL: https://raw.githubusercontent.com/Freewolf2000/savage-eberron-artwork/main/savage-eberron-artwork/module.json
+Manifest URL: [https://raw.githubusercontent.com/Freewolf2000/savage-eberron-artwork/main/savage-eberron-artwork/module.json](https://github.com/Freewolf2000/savage-eberron-rules/blob/main/savage-eberron-rules/module.json)
 
 ##Savage Eberron
 Rules system for my version of Savage Eberron which is different than what is presented by Kristian Serrano.
