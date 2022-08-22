@@ -78,6 +78,12 @@
   margin-top: 0;
 }
 
+/* TABLES */
+/* Modifications to the styling of tables */
+.swec-core td.improved-edge {
+  text-indent: 20px;
+}
+
 /* Monk's Enhanced Journals Modifications */
 .monks-enhanced-journal input[name="name"] {
     display: inherit !important;
